@@ -1,0 +1,25 @@
+{
+  "name": "@mono/components",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/types/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -b"
+  },
+  "peerDependencies": {
+    "react": ">=17.0.2"
+  },
+  "devDependencies": {
+    "@types/react": "17.0.21",
+    "react": "17.0.2"
+  }
+}

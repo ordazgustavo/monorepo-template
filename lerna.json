@@ -1,0 +1,9 @@
+{
+  "packages": ["packages/*"],
+  "version": "independent",
+  "npmClient": "npm",
+  "publish": {
+    "ignoreChanges": ["*.md"],
+    "message": "chore: publish"
+  }
+}
