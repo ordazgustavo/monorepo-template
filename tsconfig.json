@@ -44,7 +44,7 @@
     "allowUnreachableCode": false,
 
     /* Completeness */
-    "skipLibCheck": false
+    "skipLibCheck": true
   },
   "references": [
     { "path": "./packages/components" },

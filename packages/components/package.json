@@ -17,7 +17,8 @@
     "build:types": "tsc -b",
     "build:esm": "swc src -d dist/esm --config-file ../../.swcrc -s",
     "build:cjs": "swc src -d dist/cjs --config-file ../../.swcrc -C module.type=commonjs -s",
-    "build": "npm-run-all build:*"
+    "build": "npm-run-all build:*",
+    "test": "jest"
   },
   "peerDependencies": {
     "react": ">=17.0.2"

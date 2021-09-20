@@ -1,4 +1,5 @@
 {
+  "exclude": [".test.[jt]sx?$"],
   "jsc": {
     "parser": {
       "syntax": "typescript",
