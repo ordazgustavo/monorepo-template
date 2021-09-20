@@ -12,8 +12,12 @@
   "files": [
     "dist"
   ],
+  "sideEffects": false,
   "scripts": {
-    "build": "tsc -b"
+    "build:types": "tsc -b",
+    "build:esm": "swc src -d dist/esm --config-file ../../.swcrc -s",
+    "build:cjs": "swc src -d dist/cjs --config-file ../../.swcrc -C module.type=commonjs -s",
+    "build": "npm-run-all build:*"
   },
   "peerDependencies": {
     "react": ">=17.0.2"
@@ -21,5 +25,8 @@
   "devDependencies": {
     "@types/react": "17.0.21",
     "react": "17.0.2"
+  },
+  "dependencies": {
+    "@swc/helpers": "^0.2.13"
   }
 }
