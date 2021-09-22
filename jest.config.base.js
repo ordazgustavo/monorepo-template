@@ -173,6 +173,7 @@ const config = {
     '^.+\\.(t|j)sx?$': [
       '@swc/jest',
       {
+        exclude: undefined,
         jsc: {
           parser: {
             syntax: 'typescript',
