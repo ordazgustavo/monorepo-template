@@ -1,0 +1,8 @@
+node_modules
+dist
+coverage
+__snapshots__
+
+jest.config.js
+jest.config.base.js
+jest.setup.js

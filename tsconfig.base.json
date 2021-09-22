@@ -46,6 +46,7 @@
     /* Completeness */
     "skipLibCheck": true
   },
+  "exclude": ["__tests__"],
   "references": [
     { "path": "./packages/components" },
     { "path": "./packages/utils" }

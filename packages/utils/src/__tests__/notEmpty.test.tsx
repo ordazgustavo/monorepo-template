@@ -1,9 +1,13 @@
 import { notEmpty } from '../notEmpty';
 
-test('notEmpty', () => {
-  const arr = [null, undefined, 1];
+describe('notEmpty', () => {
+  it('filters null and undefined values', () => {
+    expect.hasAssertions();
+    const valid = 1;
+    const arr = [null, undefined, valid];
 
-  const result = arr.filter(notEmpty);
+    const result = arr.filter(notEmpty);
 
-  expect(result).toEqual([1]);
+    expect(result).toStrictEqual([valid]);
+  });
 });
