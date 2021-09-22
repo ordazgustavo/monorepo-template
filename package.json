@@ -6,6 +6,8 @@
     "bootstrap": "lerna bootstrap",
     "build": "lerna run build",
     "test": "jest",
+    "typecheck": "lerna run typecheck",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "prepare": "husky install"
   },
   "devDependencies": {
